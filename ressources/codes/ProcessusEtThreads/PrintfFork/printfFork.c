@@ -5,8 +5,9 @@
 
 int main() {
 
-    printf("bonjour je suis le processus principal de pid %d", getpid());
+    printf("bonjour je suis le processus principal de pid %d \n", getpid());
 
+    fflush(stdout);
     int cpid = fork();
 
     if (!cpid) {
